@@ -1,4 +1,10 @@
 # ninja log v6
-1	72	1728508039563403919	CMakeFiles/client.dir/src/filter.c.o	21c9b4d1a22ef13a
-0	118	1728508039563403919	CMakeFiles/client.dir/src/main.c.o	a9b72babdd03d103
 118	182	1728508039680403995	client	6d66b471e6e32e08
+0	118	1728508039563403919	CMakeFiles/client.dir/src/main.c.o	a9b72babdd03d103
+1	72	1728508039563403919	CMakeFiles/client.dir/src/filter.c.o	21c9b4d1a22ef13a
+1	40	1728702091013386940	build.ninja	56ef28d0dabed28f
+0	39	1728702091030387178	CMakeFiles/format	e321490b0adac768
+0	39	1728702091030387178	/home/jonathan/comp-3980-assign-2/cmake-build-debug/CMakeFiles/format	e321490b0adac768
+40	111	1728702091070387739	CMakeFiles/server.dir/src/filter.c.o	4520895746f4f27e
+40	113	1728702091070387739	CMakeFiles/server.dir/src/server.c.o	eaf8abec1d357d86
+114	1108	1728702091144388775	server	917cb1a7f7d8bd76

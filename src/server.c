@@ -53,7 +53,6 @@ static void *handle_client_request(void *arg)
         }
 
         // Write the processed string to the output FIFO
-
         output_fd = open(OUTPUT_FIFO, O_WRONLY | O_CLOEXEC, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
         if(output_fd >= 0)
         {
@@ -83,7 +82,6 @@ int main(void)
     pthread_t client_thread;
 
     printf("Server is running...\n");
-
     // Set up signal handling for graceful termination
     signal(SIGINT, handle_sigint);
 
@@ -99,6 +97,7 @@ int main(void)
         *input_fd = open(INPUT_FIFO, O_RDONLY | O_CLOEXEC);
         if(*input_fd >= 0)
         {
+            printf("processing request...\n");
             // Create a new thread to handle the request
             pthread_create(&client_thread, NULL, handle_client_request, (void *)input_fd);
             pthread_detach(client_thread);    // No need to join the thread
