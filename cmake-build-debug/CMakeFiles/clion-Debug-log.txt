@@ -1,0 +1,6 @@
+/home/jonathan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/jonathan/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja -DCMAKE_C_COMPILER=clang -G Ninja -S /home/jonathan/comp-3980-assign-2 -B /home/jonathan/comp-3980-assign-2/cmake-build-debug
+-- Compiler being used: /usr/bin/clang
+COMPILER_NAME: clang
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/jonathan/comp-3980-assign-2/cmake-build-debug

@@ -1,0 +1,4 @@
+# ninja log v6
+1	72	1728508039563403919	CMakeFiles/client.dir/src/filter.c.o	21c9b4d1a22ef13a
+0	118	1728508039563403919	CMakeFiles/client.dir/src/main.c.o	a9b72babdd03d103
+118	182	1728508039680403995	client	6d66b471e6e32e08

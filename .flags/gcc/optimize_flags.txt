@@ -1,0 +1,1 @@
+-fno-fast-math -fmath-errno -ftrapping-math -fsigned-zeros -fno-associative-math -fno-reciprocal-math -fno-unsafe-math-optimizations -frounding-math -fno-cx-limited-range -fno-cx-fortran-rules

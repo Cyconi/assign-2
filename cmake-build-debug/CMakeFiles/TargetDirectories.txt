@@ -1,0 +1,5 @@
+/home/jonathan/comp-3980-assign-2/cmake-build-debug/CMakeFiles/server.dir
+/home/jonathan/comp-3980-assign-2/cmake-build-debug/CMakeFiles/client.dir
+/home/jonathan/comp-3980-assign-2/cmake-build-debug/CMakeFiles/format.dir
+/home/jonathan/comp-3980-assign-2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jonathan/comp-3980-assign-2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

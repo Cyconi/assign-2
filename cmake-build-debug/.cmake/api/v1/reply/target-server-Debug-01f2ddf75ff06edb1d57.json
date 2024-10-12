@@ -1,0 +1,1063 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "server"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_options",
+			"target_link_directories",
+			"add_dependencies",
+			"target_compile_options",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 195,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 243,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 200,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -std=c17 -fcolor-diagnostics"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-D_POSIX_C_SOURCE=200809L"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-D_XOPEN_SOURCE=700"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-D_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-D_DARWIN_C_SOURCE"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-D__BSD_VISIBLE"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-g3"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-ggdb3"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-gpubnames"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-ggnu-pubnames"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fdebug-types-section"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-grecord-gcc-switches"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-gcolumn-info"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-glldb"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fno-discard-value-names"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-faddrsig"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fbasic-block-sections=all"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fno-sanitize-ignorelist"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fno-sanitize-recover=all"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fsanitize=shadow-call-stack"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fsanitize-trap=all"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fsanitize=unreachable"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fstack-check"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fstack-protector"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fstack-protector-all"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-ftls-model=global-dynamic"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-funique-internal-linkage-names"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fstrict-vtable-pointers"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fforce-emit-vtables"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fno-assume-sane-operator-new"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fassume-nothrow-exception-dtor"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fcf-protection=full"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-O0"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-poison-system-directories"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-invalid-command-line-argument"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unused-command-line-argument"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wpedantic"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-pedantic"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-pedantic-errors"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wabi"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wchar-subscripts"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wdouble-promotion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wformat=2"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wformat-nonliteral"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wformat-security"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wformat-y2k"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wnonnull"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wnull-dereference"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Winfinite-recursion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Winit-self"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wignored-qualifiers"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wmain"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wmisleading-indentation"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wmissing-braces"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wmissing-include-dirs"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wparentheses"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wsequence-point"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wreturn-type"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wshift-negative-value"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wswitch"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wswitch-default"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wswitch-enum"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wunused-but-set-parameter"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wunused-but-set-variable"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wunused-function"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wunused-label"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wunused-local-typedefs"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wunused-parameter"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unused-result"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wunused-variable"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wunused-value"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wunused"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wuninitialized"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wunknown-pragmas"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wstrict-aliasing"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wstring-compare"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wmissing-noreturn"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wmissing-format-attribute"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Walloca"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbool-operation"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wframe-address"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wtautological-compare"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wfloat-equal"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wfree-nonheap-object"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wpointer-arith"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wtype-limits"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wcomment"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wcomments"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wtrigraphs"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wundef"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wunused-macros"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wcast-qual"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wcast-function-type"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wwrite-strings"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wconversion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wdangling-else"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wdate-time"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wempty-body"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wenum-compare"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wenum-conversion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wsign-compare"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wsign-conversion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wfloat-conversion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wsizeof-array-div"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wsizeof-pointer-div"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wsizeof-pointer-memaccess"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wmemset-transposed-args"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Waddress"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wlogical-not-parentheses"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Waggregate-return"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wmissing-declarations"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wmissing-field-initializers"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wpacked"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-padded"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wredundant-decls"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Winline"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wint-in-bool-context"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Winvalid-pch"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Winvalid-utf8"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wvla"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wvolatile-register-var"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wxor-used-as-pow"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wdisabled-optimization"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Woverlength-strings"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wextra-tokens"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Weverything"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unsafe-buffer-usage"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "\"-W#pragma-messages\""
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "\"-W#warnings\""
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-WCFString-literal"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-WCL4"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Waddress-of-packed-member"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Waddress-of-temporary"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Walign-mismatch"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Walloca-with-align-alignof"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Walways-inline-coroutine"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wambiguous-ellipsis"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wambiguous-macro"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wanalyzer-incompatible-plugin"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wanon-enum-enum-conversion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wapinotes"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wargument-outside-range"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wargument-undefined-behaviour"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Warray-bounds-pointer-arithmetic"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wasm-operand-widths"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wassign-enum"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wassume"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wat-protocol"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Watimport-in-framework-header"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Watomic-access"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Watomic-alignment"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Watomic-implicit-seq-cst"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Watomic-memory-ordering"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Watomic-properties"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wattribute-packed-for-bitfield"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wattribute-warning"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wattributes"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wauto-decl-extensions"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wauto-import"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wavailability"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wavr-rtlib-linking-quirks"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbackend-plugin"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbackslash-newline-escape"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbinary-literal"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbit-int-extension"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbitfield-constant-conversion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbitfield-enum-conversion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbitfield-width"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbitwise-conditional-parentheses"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbitwise-instead-of-logical"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbitwise-op-parentheses"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wblock-capture-autoreleasing"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbool-conversion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbraced-scalar-init"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbranch-protection"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbridge-cast"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbuiltin-assume-aligned-alignment"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbuiltin-macro-redefined"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbuiltin-memcpy-chk-size"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbuiltin-requires-header"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wcalled-once-parameter"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wcast-calling-convention"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wcast-function-type-strict"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wcast-of-sel-type"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wcast-qual-unrelated"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wambiguous-member-template"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbind-to-temporary-copy"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wabstract-final-class"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wabstract-vbase-init"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wambiguous-delete"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wambiguous-reversed-operator"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wanonymous-pack-parens"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wauto-disable-vptr-sanitizer"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wauto-storage-class"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wauto-var-id"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wbinding-in-condition"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wcall-to-pure-virtual-from-ctor-dtor"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/home/jonathan/comp-3980-assign-2/include"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "format::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "server::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-faddrsig",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fbasic-block-sections=all",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fno-sanitize-ignorelist",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fno-sanitize-recover=all",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fsanitize=shadow-call-stack",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fsanitize-trap=all",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fsanitize=unreachable",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fstack-check",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fstack-protector",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fstack-protector-all",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fstack-protector-strong",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-ftls-model=global-dynamic",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-funique-internal-linkage-names",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fstrict-vtable-pointers",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fforce-emit-vtables",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fno-assume-sane-operator-new",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fassume-nothrow-exception-dtor",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-fcf-protection=full",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-L/usr/local/lib",
+				"role" : "libraryPath"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "server",
+	"nameOnDisk" : "server",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/server.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/filter.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
