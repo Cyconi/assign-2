@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
     }
 
     // Open the input FIFO for writing
-    input_fd = open(INPUT_FIFO, O_WRONLY | O_CLOEXEC, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+    input_fd = open(INPUT_FIFO, O_WRONLY | O_CLOEXEC);
     if(input_fd < 0)
     {
         perror("Error opening input FIFO");
@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
     close(input_fd);
 
     // Open the output FIFO for reading the response
-    output_fd = open(OUTPUT_FIFO, O_RDONLY | O_CLOEXEC, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+    output_fd = open(OUTPUT_FIFO, O_RDONLY | O_CLOEXEC);
     if(output_fd < 0)
     {
         perror("Error opening output FIFO");

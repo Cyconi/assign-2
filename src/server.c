@@ -25,7 +25,7 @@ static void *handle_client_request(void *arg)
     bytes_read = read(input_fd, buffer, sizeof(buffer) - 1);
     if(bytes_read > 0)
     {
-        char       *response = malloc(BUFSIZE);
+        char       *response = (char *)malloc(BUFSIZE);
         char       *saveptr;
         int         output_fd;
         const char *conversion_type = strtok_r(buffer, ":", &saveptr);
@@ -53,7 +53,7 @@ static void *handle_client_request(void *arg)
         }
 
         // Write the processed string to the output FIFO
-        output_fd = open(OUTPUT_FIFO, O_WRONLY | O_CLOEXEC, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+        output_fd = open(OUTPUT_FIFO, O_WRONLY | O_CLOEXEC);
         if(output_fd >= 0)
         {
             write(output_fd, response, strlen(response));
@@ -87,7 +87,7 @@ int main(void)
 
     while(1)
     {
-        int *input_fd = malloc(sizeof(int));
+        int *input_fd = (int *)malloc(sizeof(int));
         if(!input_fd)    // Check for successful malloc
         {
             perror("Error allocating memory for input_fd");
