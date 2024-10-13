@@ -13,7 +13,6 @@
 
 #define BUFSIZE 1024
 
-// Function to handle client requests
 static void *handle_client_request(void *arg)
 {
     char    buffer[BUFSIZE];
@@ -21,7 +20,6 @@ static void *handle_client_request(void *arg)
     int     input_fd = *((int *)arg);
     free(arg);
 
-    // Read the request from the input FIFO
     bytes_read = read(input_fd, buffer, sizeof(buffer) - 1);
     if(bytes_read > 0)
     {
@@ -44,6 +42,10 @@ static void *handle_client_request(void *arg)
                 {
                     client_string[i] = lower_filter(client_string[i]);
                 }
+                else
+                {
+                    client_string[i] = null_filter(client_string[i]);
+                }
             }
             snprintf(response, BUFSIZE, "%s", client_string);
         }
@@ -52,7 +54,6 @@ static void *handle_client_request(void *arg)
             snprintf(response, BUFSIZE, "Invalid format.");
         }
 
-        // Write the processed string to the output FIFO
         output_fd = open(OUTPUT_FIFO, O_WRONLY | O_CLOEXEC);
         if(output_fd >= 0)
         {
@@ -63,14 +64,13 @@ static void *handle_client_request(void *arg)
         {
             perror("Error opening output FIFO");
         }
-        free(response);    // Free allocated response buffer
+        free(response);
     }
     close(input_fd);
     pthread_exit(NULL);
 }
 
 static void handle_sigint(int signal) __attribute__((noreturn));
-
 static void handle_sigint(int signal)
 {
     (void)signal;
@@ -82,13 +82,12 @@ int main(void)
     pthread_t client_thread;
 
     printf("Server is running...\n");
-    // Set up signal handling for graceful termination
     signal(SIGINT, handle_sigint);
 
     while(1)
     {
         int *input_fd = (int *)malloc(sizeof(int));
-        if(!input_fd)    // Check for successful malloc
+        if(!input_fd)
         {
             perror("Error allocating memory for input_fd");
             exit(EXIT_FAILURE);
@@ -98,14 +97,13 @@ int main(void)
         if(*input_fd >= 0)
         {
             printf("processing request...\n");
-            // Create a new thread to handle the request
             pthread_create(&client_thread, NULL, handle_client_request, (void *)input_fd);
-            pthread_detach(client_thread);    // No need to join the thread
+            pthread_detach(client_thread);
         }
         else
         {
             perror("Error opening input FIFO");
-            free(input_fd);    // Free allocated input_fd if opening fails
+            free(input_fd);
             exit(EXIT_FAILURE);
         }
     }

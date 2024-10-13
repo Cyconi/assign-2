@@ -20,7 +20,6 @@ int main(int argc, char *argv[])
     char        response[BUFSIZE];
     ssize_t     bytes_read;
 
-    // Parse command-line arguments
     while((opt = getopt(argc, argv, "s:f:")) != -1)
     {
         switch(opt)
@@ -41,11 +40,10 @@ int main(int argc, char *argv[])
     if(client_string == NULL || conversion_type == NULL)
     {
         printf("Usage: %s -s <string> -f <conversion>\n", argv[0]);
-        printf("<conversion> -> \"upper\", \"lower\"\n");
+        printf("<conversion> -> \"upper\", \"lower\", \"null\"\n");
         exit(EXIT_FAILURE);
     }
 
-    // Open the input FIFO for writing
     input_fd = open(INPUT_FIFO, O_WRONLY | O_CLOEXEC);
     if(input_fd < 0)
     {
@@ -53,14 +51,12 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
     }
 
-    // Format the message as "conversion:string"
     snprintf(buffer, sizeof(buffer), "%s:%s", conversion_type, client_string);
 
     // Send the formatted string to the server
     write(input_fd, buffer, strlen(buffer));
     close(input_fd);
 
-    // Open the output FIFO for reading the response
     output_fd = open(OUTPUT_FIFO, O_RDONLY | O_CLOEXEC);
     if(output_fd < 0)
     {
@@ -68,7 +64,6 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
     }
 
-    // Read the response from the server
     bytes_read = read(output_fd, response, sizeof(response) - 1);
     if(bytes_read > 0)
     {
